@@ -1,2 +1,42 @@
-
-/* Your CSS Code here. */
+body { 
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; 
+	padding:20px;
+	color:#222; 
+}
+table { 
+	border-collapse: collapse; 
+	width: 560px; 
+	max-width:100%; 
+	margin-bottom:18px; 
+}
+th, td { 
+	border: 1px solid #999; 
+	padding:8px 10px; 
+}
+thead th {
+	background:#f3f3f3; 
+	font-weight:700; 
+}
+caption { 
+	font-weight:700; 
+	text-align:left; 
+	margin-bottom:8px; 
+}
+ol.media-list {
+		max-width:720px; 
+}
+.media-block { 
+	margin:8px 0 18px; 
+}
+img.responsive { 
+	max-width:320px;
+	width:100%; 
+	height:auto; 
+	display:block; 
+}
+video, audio { 
+	width:100%; 
+	max-width:560px; 
+	height:auto; 
+	display:block; 
+}

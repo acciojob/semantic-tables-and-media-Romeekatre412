@@ -1,16 +1,80 @@
-<!DOCTYPE html>
-
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Semantic Tables and Media</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <h1>Semantic Tables and Media — Example</h1>
+
+  <!-- Semantic table with thead and tbody -->
+  <table aria-label="Roll numbers and names">
+    <caption>Class Roll List</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">Roll</th>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td scope="row">1</td>
+        <td>Alice Johnson</td>
+      </tr>
+      <tr>
+        <td scope="row">2</td>
+        <td>Brian Lee</td>
+      </tr>
+      <tr>
+        <td scope="row">3</td>
+        <td>Carla Mendes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Required heading text exactly as specified -->
+  <h2>List of medias</h2>
+
+  <!-- Ordered list with three items: Image, Video (with source), Audio (with source) -->
+  <ol class="media-list">
+    <li>
+      <div class="media-block">
+        <strong>Image:</strong>
+        <!-- Image source as specified, include alt -->
+        <img
+          class="responsive"
+          src="https://picsum.photos/id/123/200/300"
+          alt="Sample photo from picsum"
+        />
+      </div>
+    </li>
+
+    <li>
+      <div class="media-block">
+        <strong>Video:</strong>
+        <!-- Video with <source> element and controls -->
+        <video controls preload="metadata" aria-label="Big Buck Bunny sample video">
+          <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </div>
+    </li>
+
+    <li>
+      <div class="media-block">
+        <strong>Audio:</strong>
+        <!-- Audio with <source> element and controls -->
+        <audio controls preload="metadata" aria-label="Epoq Lepidoptera sample audio">
+          <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </li>
+  </ol>
 
 </body>
-
 </html>
